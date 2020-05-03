@@ -20,6 +20,8 @@
           
 <img src="/Images/aws-s3.png" width="100"> Amazon S3 Amazon S3 is listed top in the AWS services list - because, storing and retrieving     the data plays a prominent role in    cloud computing. So, AWS offers a wonderful service called Amazon Simple Storage Service or       Amazon S3 to store and retrieve data from     the cloud. S3 allows the user to store, upload, retrieve large files up to 5 TB from      the cloud. It is a scalable, low-cost and high-        speed web-based service designed for archival and online backup of              application programs and data. Using S3, the user can access the        same      system that Amazon uses to run its website. Users    have control over the public or private accessibility of the data.
                             [Learn more about Amazo S3 here](https://aws.amazon.com/s3/)
+                            
+  [refer](https://github.com/sayyuu-14/Sanyukta032/blob/Sanyukta-032/AWS/S3.md)
                                                        
             
 -**Amazon EC2 :**    
@@ -29,6 +31,8 @@
              
           
    *Visit here to know* [Complete EC2 features information](https://aws.amazon.com/ec2/features/)
+   
+   [Refer](https://github.com/sayyuu-14/Sanyukta032/blob/Sanyukta-032/AWS/EC2.md)
                                       
                                       
 -**AWS Lambda :**
@@ -44,7 +48,9 @@
    -**AWS RDS [Relational Database Services]:**
    
    <img src="/Images/aws-rds.png" width="100"> It is a fully SQL database cloud service that allows users to operate and create             relational databases. RDS can manage from any AWS Management Console. Using RDS, you can access files and databases from anywhere in   a highly scalable and cost-effective way.
-                                        
+    
+ 
+  [refer](https://github.com/sayyuu-14/Sanyukta032/blob/Sanyukta-032/AWS/RDS.md)
                                         
                                         
                                         
