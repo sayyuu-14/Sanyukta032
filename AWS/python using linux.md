@@ -21,8 +21,7 @@
 - **STEP 3 :**
 
 
-  Write command **--> sudo su **
-                  **--> python**
+  Write command **--> sudo su --> python**
 
 
 
