@@ -1,0 +1,130 @@
+Q1:(a) Given a number count the total number of digits in a number
+For example: The number is 75869, so the output should be 5
+
+
+solution:
+n=int(input("Enter number:"))
+count=0
+while(n>0):
+    count=count+1
+    n=n//10
+print("The number of digits:",count)
+
+
+
+(b) Reverse the following list using for loop
+list1 = [10, 20, 30, 40, 50]
+Expected output:
+50
+40
+30
+20
+10
+
+solution: 
+
+my_list = []
+n = int(input("enter elements"))
+for i in range(0, n):
+   element = int(input())
+   my_list.append(element)
+   new_list = my_list[::-1]
+print("reversed list is:",new_list)
+
+
+
+
+2. Given 2 strings, s1 and s2, create a new string by appending s2 in the middle of s1
+Expected Outcome:
+appendMiddle("Chrisdem", IamNewString) ? "ChrIamNewStringisdem"
+
+
+def appendMiddle(s1, s2):
+  middleIndex = int(len(s1) /2)
+  print("Original Strings are", s1, s2)
+  middleThree = s1[:middleIndex-1:]+ s2 +s1[middleIndex-1:]
+  print("After appending", middleThree)
+  
+appendMiddle("Chrisdem", "IamNewString")
+
+
+
+3. Arrange String characters such that lowercase letters should come first
+Given input String of combination of the lower and upper case arrange characters in such a way that all
+lowercase letters should come first.
+
+Expected Output:
+input_String = PyNaTive
+arranging characters giving precedence to lowercase letters
+aeiNPTvy
+arranging characters giving precedence to lowercase letters:
+yaivePNT
+
+
+
+
+inputStr = "PyNaTive"
+words = inputStr.split()
+lower = []
+upper = []
+for char in inputStr:
+    if char.islower():
+        lower.append(char)
+    else:
+        upper.append(char)
+sortedString = ''.join(lower + upper)
+print("\n arranging characters giving precedence to lowercase letters:")
+print(sortedString)
+
+
+
+
+
+4. Given a string, return the sum and average of the digits that appear in the string, ignoring all other
+characters
+For Example: –
+sumAndAverage("English = 78 Science = 83 Math = 68 History = 65") = sum 294 Percentage is 73.5
+Solution:
+import re
+
+inputStr = "English = 78 Science = 83 Math = 68 History = 65"
+markList = [int(num) for num in re.findall(r'\b\d+\b', inputStr)]
+totalMarks = 0
+for mark in markList:
+  totalMarks+=mark
+
+percentage = totalMarks/len(markList)  
+print("Total Marks is:", totalMarks, "Percentage is ", percentage)
+
+
+5. Given a two list. Create a third list by picking an odd-index element from the first list and even index
+elements from second.
+For Example:
+listOne = [3, 6, 9, 12, 15, 18, 21]
+listTwo = [4, 8, 12, 16, 20, 24, 28]
+Expected Output:
+Element at odd-index positions from list one
+[6, 12, 18]
+Element at even-index positions from list two
+[4, 12, 20, 28]
+Printing Final third list
+[6, 12, 18, 4, 12, 20, 28]
+
+solution:
+
+listOne = [3, 6, 9, 12, 15, 18, 21]
+listTwo = [4, 8, 12, 16, 20, 24, 28]
+listThree = list()
+
+oddElements = listOne[1::2]
+print("Element at odd-index positions from list one")
+print(oddElements)
+
+EvenElement = listTwo[0::2]
+print("Element at odd-index positions from list two")
+print(EvenElement)
+
+print("Final third list")
+listThree.extend(oddElements)
+listThree.extend(EvenElement)
+print(listThree)
