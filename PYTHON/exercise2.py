@@ -3,12 +3,14 @@
 
 n = int(input("enter a number :"))
 sum1=0
+str1=''
 for i in range(1,n+1):
     sum1=sum1+i
-    print(i,end="+")
+    str1=str1+str(i)+' + '
+print(str1[:-2],"=",sum1)
     
 
-print("=",sum1)
+
 
 
 
