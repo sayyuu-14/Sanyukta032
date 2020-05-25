@@ -43,8 +43,9 @@ print("sum of numbers from 1 to 10 =",add(range(1,11)))
 #4
 
 
-def show_student(id1,college,name):
-    print(id1,college,name)
+
+def show_student(name,id1=1,college="vita"):
+    print("student id :",id1,"\ncollege name :",college,"\nstudent name :",name)
 
 
 name=input("enter your name :")
@@ -52,18 +53,14 @@ id1=input("enter your id :")
 college=input("enter your college name:")
 
 
-if id1!="" and college!="" and name !=""  :
+if id1!="" and college!="" :
     show_student(name,id1,college)
 
-
-elif id1=="" and college!="" and name!=""  :
-    show_student(name,id1="1", college="")
-
-elif id1!="" and college=="" and name !="" :
-    show_student(name,id1, college="vita")
-
 else:
-     show_student(name, id1="1", college="vita")
+     show_student(name)
+     
+
+
 
 
 #5
