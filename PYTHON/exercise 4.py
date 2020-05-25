@@ -31,6 +31,17 @@ print("the number of local variable are :",len(locals()))
 
 #3
 
+# using recursive 
+
+def add(nos):
+    if nos==0:
+         return nos
+    else:
+         return nos + add(nos-1)
+print("sum of numbers from 1 to 10 =",add(10))
+
+# without recursive
+
 def add(nos):
     x = 0
     for i in nos:
