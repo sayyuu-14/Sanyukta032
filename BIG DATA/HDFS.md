@@ -1,3 +1,8 @@
+# HDFS
+
+
+   <img src="/Images/0.PNG" width="500">
+
 1 ) View the hdfs dfs Command 
 
    <img src="/Images/1.PNG" width="500">
